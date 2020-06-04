@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  ocrpackage:
+    image: ocrpackage
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
